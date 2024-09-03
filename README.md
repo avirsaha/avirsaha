@@ -1,5 +1,5 @@
 
-# Hey there! 👋
+# Hi, I'am Aviraj Saha
 I’m neck-deep in computer science and AI, where I get to wrestle with code and occasionally make my computer smarter than my Wi-Fi. Currently, I’m gearing up for competitive coding contests—trying to turn those “Why isn’t this working?” moments into “Aha!” victories. It’s a wild ride of debugging, caffeine, and the occasional celebratory dance when the code finally runs.
 
 [![Aviraj's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=avirsaha&theme=github-compact&days=10&area=true)](https://github.com/avirsaha)
@@ -29,7 +29,10 @@ Always up for a chat, a collaboration, or just geeking out over tech. Check out 
 
 ![](https://github-trophies.vercel.app/?username=avirsaha&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
----
+<p>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=avirsaha&theme=dark&hide_border=true" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=avirsaha&theme=dark&hide_border=true&include_all_commits=false&count_private=true&layout=compact" width="49%" />
+</p>
 
 # OMG Thanks for stopping by! 😊  
 P.S. My custom Neovim config is pinned below—take a peek if you’re into that sort of thing. 👇
