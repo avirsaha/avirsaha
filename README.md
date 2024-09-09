@@ -1,7 +1,6 @@
 
-
 # I'm Aviraj Saha
 
-Skilled in Python, currently learning C/C++, with interests in artificial intelligence, competitive programming, hackathons, and contributing to open source projects.
+Skilled in Python and currently learning C/C++, with a keen interest in artificial intelligence, competitive programming, hackathons, and open source contributions.
 
-Check out my custom Neovim configuration, **tauconf.nvim**, pinned below if you are interested in enhancing your development environment.
+Curious about how I streamline my development workflow? Explore **tauconf.nvim**, my custom Neovim configuration, pinned below to see what’s possible with a tailored coding environment.
