@@ -5,6 +5,7 @@
 
 
 
+
 I’m neck-deep in computer science and AI, where I get to wrestle with code and occasionally make my computer smarter than my Wi-Fi. Currently, I’m gearing up for competitive coding contests—trying to turn those “Why isn’t this working?” moments into “Aha!” victories. It’s a wild ride of debugging, caffeine, and the occasional celebratory dance when the code finally runs.
 
 
