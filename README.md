@@ -1,12 +1,5 @@
-
-
-
-
-
-
-
 # I'm Aviraj Saha
 
-Skilled in Python, JS, C/C++, Go, and currently learning Rust with a keen interest in artificial intelligence, competitive programming, hackathons, cybersecurity, system design and open source contributions.
+Languages? Python, JS, C/C++, Go—and yeah, I’m picking up Rust because of course I am. I live for AI rabbit holes, leetcode ladders, hackathon sprints, cybersecurity traps, system design rants, and open source bangers.
 
-Curious about how I streamline my development workflow? Explore **tauconf.nvim**, my custom Neovim configuration and other dotfiles, pinned below to see what’s possible with a tailored coding environment.
+BUT WAIT—ever wonder how I stay in flow state? BOOM: tauconf.nvim. My surgically crafted, blazingly fast, “who-needs-an-IDE” Neovim config. It’s got the plugins, the mappings, the vibes. You want dotfiles? I got dotfiles. They're pinned. They're spicy. Go look.
