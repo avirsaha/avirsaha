@@ -1,0 +1,1022 @@
+<!
+Color Palette:
+
+    Primary Color: Deep Navy Blue
+
+        Hex: #0D1B2A
+
+        Usage: Header background, main titles, key accents
+
+        Meaning: Trust, professionalism, intelligence, stability
+
+    Secondary Color: Electric Teal
+
+        Hex: #00BFA6
+
+        Usage: Navigation bar, highlights, skill tags, accents
+
+        Meaning: Innovation, futurism, energy, freshness
+
+    Neutral Background: Off-White
+
+        Hex: #F5F7FA
+
+        Usage: Page background, content backgrounds
+
+        Meaning: Cleanliness, clarity, readability
+
+    Text Color: Dark Gray
+
+        Hex: #333333
+
+        Usage: Paragraph text, general content
+
+        Meaning: Neutrality, legibility, modern tone
+
+    Accent Color: Warm Coral Orange
+
+        Hex: #FF6F61
+
+        Usage: Buttons, call to actions, hover states
+
+        Meaning: Energy, creativity, draws attention
+
+    Trust Element Color: Soft Sky Blue
+
+        Hex: #6CA0DC
+
+        Usage: Trust signals, testimonials, credentials, info highlights
+
+        Meaning: Calmness, reliability, reassurance
+>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aviraj Saha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home" tabindex="1">Home</a>
+    <a href="#skills" tabindex="2">Skills</a>
+    <!--<a href="#projects" tabindex="3">Projects</a>>-->
+    <a href="#contact" tabindex="4">Contact</a>
+    <!--<a href="#services" tabindex="5">Services</a>-->
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <!-- Left column -->
+    <section class="left-column" id="home">
+      <img
+        src="./media/headshot_avirajsaha.jpg"
+        alt="Aviraj Saha Headshot"
+        class="headshot"
+        tabindex="5"
+      />
+      <h1 class="name">Aviraj Saha</h1>
+      <p class="intro">On A Mission to build tomorrow's technological utopia!</p>
+    </section>
+
+    <!-- Right column -->
+    <section class="right-column">
+      <h2>About Me</h2>
+      <p>
+      I’m a versatile developer and student. My passion for technology started in grade school. This early start made me well-rounded and helped me excel in learning and production.
+
+I’m also focused on improving communication, leadership, and teamwork skills. Right now, I’m learning Russian.
+
+My skill set covers programming, DevOps, cloud infrastructure, and new tech. I use modern tools to boost productivity and creativity.
+      </p>
+      <p>
+      I’m curious and love learning. I thrive on research that challenges me to think critically. I’m an active open-source contributor and enjoy collaborating with the global tech community.
+
+I’m open to research opportunities and freelance gigs. Whether you’re a startup, student, professor, or tech enthusiast, feel free to reach out and explore my work!
+      </p>
+    </section>
+  </main>
+
+  <!-- Skills & Tools Section -->
+  <section class="skills-tools-section" id="skills">
+    <div class="skills-column">
+      <h3>Skills</h3>
+      <ul>
+        <li>Programming</li>
+        <li>Fast Prototyping</li>
+        <li>Problem Soving</li>
+        <li>Probablity and Statistics</li>
+        <li>Machine Learning</li>
+        <li>Full Stack</li>
+        <li>DevOps and Cloud</li>
+      </ul>
+    </div>
+    <div class="tools-column">
+      <h3>Tools &amp; Tech</h3>
+      <ul>
+        <li>Python</li>
+        <li>C/C++</li>
+        <li>Golang</li>
+        <li>Node.js</li>
+        <li>Rust</li>
+        <li>Typescript</li>
+        <li>Git & Github</li>
+        <li>AWS & Azure</li>
+        <li>Pytorch & Tensorflow</li>
+        <li>Django & Flask</li>
+        <li>Rasa</li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<!--
+<section class="projects-section" id="projects">
+  <h2>Projects</h2>
+  <div class="project-tabs" role="tablist" aria-label="Project categories">
+    <button class="tab-button active" role="tab" aria-selected="true" aria-controls="freelance" id="tab-freelance" tabindex="0">Freelancing</button>
+    <button class="tab-button" role="tab" aria-selected="false" aria-controls="opensource" id="tab-opensource" tabindex="-1">Open Source</button>
+    <button class="tab-button" role="tab" aria-selected="false" aria-controls="academic" id="tab-academic" tabindex="-1">Academic & Blogs</button>
+    <button class="tab-button" role="tab" aria-selected="false" aria-controls="research" id="tab-research" tabindex="-1">Research & Publications</button>
+  </div>
+
+  <div class="project-carousel-wrapper">
+    <!-- Freelancing Projects -->
+    <!--
+    <div class="project-carousel" id="freelance" role="tabpanel" aria-labelledby="tab-freelance">
+      <div class="project-card">
+        <h3>Client Website Redesign</h3>
+        <p>Revamped UI/UX for an e-commerce platform, boosting conversions by 30%.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Mobile App UI</h3>
+        <p>Designed a sleek, user-friendly interface for a health tracking app.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
+      </div>
+    </div>
+
+    <!-- Open Source Projects -->
+    <!--
+    <div class="project-carousel" id="opensource" role="tabpanel" aria-labelledby="tab-opensource" hidden>
+      <div class="project-card">
+        <h3>OpenLibJS</h3>
+        <p>Contributed features and bug fixes to a popular JavaScript library.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>CSS Grid Enhancer</h3>
+        <p>Developed plugins to extend CSS grid capabilities for modern layouts.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View Repository</a>
+      </div>
+    </div>
+
+    <!-- Academic & Blogs -->
+    <!--
+    <div class="project-carousel" id="academic" role="tabpanel" aria-labelledby="tab-academic" hidden>
+      <div class="project-card">
+        <h3>Blog Series on Web Accessibility</h3>
+        <p>Authored comprehensive articles promoting inclusive web design.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">Read Articles</a>
+      </div>
+      <div class="project-card">
+        <h3>Academic Paper on AI Ethics</h3>
+        <p>Published a paper analyzing ethical frameworks in AI development.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View Paper</a>
+      </div>
+    </div>
+
+    <!-- Research & Publications -->
+    <!--
+    <div class="project-carousel" id="research" role="tabpanel" aria-labelledby="tab-research" hidden>
+      <div class="project-card">
+        <h3>Quantum Computing Research</h3>
+        <p>Collaborated on research focusing on scalable quantum algorithms.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">Read Publication</a>
+      </div>
+      <div class="project-card">
+        <h3>Data Science Conference Presentation</h3>
+        <p>Presented findings on predictive analytics in healthcare data.</p>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View Slides</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <button class="carousel-btn" id="prev-btn" aria-label="Previous project" tabindex="0">&#8592;</button>
+    <button class="carousel-btn" id="next-btn" aria-label="Next project" tabindex="0">&#8594;</button>
+  </div>
+</section>
+-->
+<style>
+  :root {
+    --primary: #0D1B2A;
+    --secondary: #00BFA6;
+    --neutral-bg: #F5F7FA;
+    --text: #333333;
+    --accent: #FF6F61;
+    --trust: #6CA0DC;
+  }
+
+  .projects-section {
+    padding: 2rem 1rem 4rem;
+    background: var(--neutral-bg);
+    color: var(--primary);
+    max-width: 960px;
+    margin: 0 auto 4rem;
+  }
+
+  .projects-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  /* Tabs */
+  .project-tabs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-button {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--secondary);
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .tab-button:hover,
+  .tab-button:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .tab-button.active {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* Carousel wrapper */
+  .project-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .project-carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .project-carousel[hidden] {
+    display: none;
+  }
+
+  .project-card {
+    min-width: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 1.75rem 2rem;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-card p {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .project-link {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+    align-self: flex-start;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .project-link:hover,
+  .project-link:focus {
+    border-color: var(--accent);
+    outline: none;
+  }
+
+  /* Carousel controls */
+  .carousel-controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .carousel-btn {
+    background: var(--primary);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+
+  .carousel-btn:hover,
+  .carousel-btn:focus {
+    background: var(--accent);
+    outline: none;
+  }
+
+  @media (max-width: 600px) {
+    .project-card {
+      padding: 1.25rem 1.5rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.25rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+    }
+  }
+
+.services-section {
+  max-width: 960px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  color: var(--text);
+}
+
+.services-title {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: white;
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  padding: 1.75rem;
+  flex: 1 1 280px;
+  max-width: 300px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card h3 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0;
+  padding-bottom: 50px;
+  line-height: 1.5;
+}
+
+.service-card:hover,
+.service-card:focus-within {
+  border-color: var(--accent);
+  transform: translateY(-10px);
+}
+ .service-card .card-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #2b6cb0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .service-card .card-btn:hover {
+      background-color: #2c5282;
+    }
+    .testimonials-section {
+  padding: 2rem 1rem 4rem;
+  background: var(--neutral-bg);
+  color: var(--primary);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.testimonials-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  background-color: white;
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  padding: 1.75rem;
+  flex: 0 0 280px; /* Adjust the width of each card */
+  max-width: 300px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.client-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.client-name {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.client-role {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.rating {
+  margin-bottom: 1rem;
+}
+
+.star {
+  color: #ff9800; /* Gold color for the stars */
+  font-size: 1.25rem;
+}
+
+.star:last-child {
+  color: #ddd; /* Light grey for empty stars */
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.prev-btn, .next-btn {
+  background: var(--secondary);
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .testimonial-card {
+    max-width: 280px;
+  }
+}
+.footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer-right .social-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-right .social-links li {
+  display: inline-block;
+}
+
+.footer-right .social-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-right .social-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left p {
+    margin-bottom: 1rem;
+  }
+  .footer-right {
+    margin-top: 1rem;
+  }
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector('.testimonials-carousel');
+  const totalSlides = document.querySelectorAll('.testimonial-card').length / 2; // Only use original set
+  let currentIndex = 0;
+  const scrollInterval = 5000; // 5 seconds for each testimonial
+  const carouselWidth = carousel.offsetWidth;
+
+  // Duplicate the first set of testimonials for the infinite loop effect
+  const testimonials = Array.from(document.querySelectorAll('.testimonial-card'));
+  testimonials.forEach(card => {
+    carousel.appendChild(card.cloneNode(true)); // Cloning for infinite scroll
+  });
+
+  function scrollTestimonials() {
+    currentIndex++;
+    
+    // Move the carousel
+    carousel.style.transition = 'transform 0.5s ease-in-out';
+    carousel.style.transform = `translateX(-${currentIndex * carouselWidth}px)`;
+
+    // Check if we need to reset the carousel
+    if (currentIndex >= totalSlides) {
+      setTimeout(() => {
+        currentIndex = 0;
+        carousel.style.transition = 'none'; // Disable transition during reset
+        carousel.style.transform = `translateX(0)`; // Reset to first slide
+        setTimeout(() => {
+          carousel.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+        }, 50); // Small delay to ensure smooth transition
+      }, 500); // Delay reset to maintain smooth effect
+    }
+  }
+
+  setInterval(scrollTestimonials, scrollInterval);
+
+  // Previous Button Click
+  document.querySelector('.prev-btn').addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = totalSlides - 1; // Go to the last testimonial in the original set
+    }
+    scrollTestimonials();
+  });
+
+  // Next Button Click
+  document.querySelector('.next-btn').addEventListener('click', () => {
+    if (currentIndex < totalSlides * 2 - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // Reset to the first testimonial
+    }
+    scrollTestimonials();
+  });
+});
+
+  (() => {
+    const tabs = document.querySelectorAll('.tab-button');
+    const carousels = document.querySelectorAll('.project-carousel');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    let currentTabIndex = 0;
+    let currentSlideIndex = 0;
+    let autoScrollInterval;
+
+    function updateTabs(newIndex) {
+      tabs.forEach((tab, i) => {
+        const selected = i === newIndex;
+        tab.classList.toggle('active', selected);
+        tab.setAttribute('aria-selected', selected);
+        tab.setAttribute('tabindex', selected ? 0 : -1);
+      });
+      carousels.forEach((carousel, i) => {
+        carousel.hidden = i !== newIndex;
+      });
+      currentTabIndex = newIndex;
+      currentSlideIndex = 0;
+      updateCarouselPosition();
+      resetAutoScroll();
+    }
+
+    function updateCarouselPosition() {
+      const activeCarousel = carousels[currentTabIndex];
+      const slideWidth = activeCarousel.clientWidth;
+      activeCarousel.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
+    }
+
+    function resetAutoScroll() {
+      if (autoScrollInterval) clearInterval(autoScrollInterval);
+      autoScrollInterval = setInterval(() => {
+        const activeCarousel = carousels[currentTabIndex];
+        if (currentSlideIndex < activeCarousel.children.length - 1) {
+          currentSlideIndex++;
+        } else {
+          currentSlideIndex = 0;
+        }
+        updateCarouselPosition();
+      }, 5000); // auto-scroll every 5 seconds
+    }
+
+    tabs.forEach((tab, idx) => {
+      tab.addEventListener('click', () => updateTabs(idx));
+      tab.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          updateTabs((idx + 1) % tabs.length);
+          tabs[(idx + 1) % tabs.length].focus();
+        }
+        if (e.key === 'ArrowLeft') {
+          updateTabs((idx - 1 + tabs.length) % tabs.length);
+          tabs[(idx - 1 + tabs.length) % tabs.length].focus();
+        }
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const activeCarousel = carousels[currentTabIndex];
+      if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+      } else {
+        currentSlideIndex = activeCarousel.children.length - 1;
+      }
+      updateCarouselPosition();
+      resetAutoScroll();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      const activeCarousel = carousels[currentTabIndex];
+      if (currentSlideIndex < activeCarousel.children.length - 1) {
+        currentSlideIndex++;
+      } else {
+        currentSlideIndex = 0;
+      }
+      updateCarouselPosition();
+      resetAutoScroll();
+    });
+
+    window.addEventListener('resize', updateCarouselPosition);
+
+    // Initialize
+    updateTabs(0);
+  })();
+</script>
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <div style="max-width: 480px; margin: 0 auto; text-align: center; font-size: 18px; color: var(--text);">
+    <p><strong>Email:</strong> <a href="mailto:aviraj.saha@outlook.com" style="color: var(--secondary); text-decoration: none;">aviraj.saha@outlook.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+91 8335827412" style="color: var(--secondary); text-decoration: none;">+91 8335827412</a></p>
+  </div>
+
+  <div class="socials" aria-label="Social media links" style="margin-top: 24px;">
+    <a href="https://github.com/avirsaha" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" tabindex="6">
+      <!-- GitHub SVG -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M12 0.2975C5.37 0.2975 0 5.6675 0 12.2975c0 5.298 3.438 9.8 8.205 11.387 0.6 0.113 0.82-0.26 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.726-4.042-1.61-4.042-1.61-0.546-1.387-1.332-1.756-1.332-1.756-1.089-0.745 0.082-0.73 0.082-0.73 1.205 0.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492 1 0.108-0.777 0.418-1.305 0.762-1.605-2.665-0.304-5.466-1.332-5.466-5.93 0-1.31 0.467-2.382 1.236-3.222-0.124-0.304-0.536-1.527 0.117-3.176 0 0 1.008-0.322 3.3 1.23 0.957-0.266 1.983-0.399 3.003-0.404 1.02 0.005 2.047 0.138 3.006 0.404 2.288-1.552 3.294-1.23 3.294-1.23 0.656 1.65 0.244 2.873 0.12 3.176 0.77 0.84 1.234 1.912 1.234 3.222 0 4.61-2.807 5.625-5.48 5.92 0.43 0.372 0.823 1.103 0.823 2.222 0 1.605-0.015 2.896-0.015 3.293 0 0.319 0.216 0.694 0.825 0.576C20.565 22.09 24 17.59 24 12.2975c0-6.63-5.373-12-12-12z"
+        />
+      </svg>
+    </a>
+    <a href="https://linkedin.com/in/aviraj-saha-ai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" tabindex="7">
+      <!-- LinkedIn SVG -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.48 1 4.98 2.12 4.98 3.5zM0 8h5v14H0V8zm7.5 0h4.8v2.2h.07c.67-1.3 2.3-2.7 4.74-2.7 5.07 0 6 3.3 6 7.58V22H17v-6.65c0-1.6-.03-3.65-2.22-3.65-2.23 0-2.57 1.74-2.57 3.54V22H7.5V8z"
+        />
+      </svg>
+    </a>
+    <a href="https://x.com/lemorymeak" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter" tabindex="8">
+      <!-- Twitter SVG -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M23.954 4.569c-0.885 0.392-1.83 0.656-2.825 0.775 1.014-0.61 1.794-1.574 2.163-2.723-0.951 0.564-2.005 0.974-3.127 1.195-0.897-0.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.204-4.92 4.917 0 0.39 0.045 0.765 0.13 1.124-4.09-0.205-7.72-2.165-10.15-5.144-0.423 0.722-0.666 1.561-0.666 2.457 0 1.69 0.86 3.177 2.172 4.05-0.799-0.025-1.55-0.245-2.207-0.612v0.06c0 2.362 1.678 4.333 3.91 4.778-0.409 0.111-0.84 0.171-1.285 0.171-0.314 0-0.615-0.03-0.916-0.086 0.631 1.965 2.445 3.392 4.604 3.43-1.68 1.318-3.808 2.104-6.102 2.104-0.396 0-0.779-0.022-1.17-0.066 2.179 1.394 4.768 2.209 7.557 2.209 9.054 0 14.002-7.5 14.002-14 0-0.213-0.005-0.426-0.015-0.637 0.962-0.694 1.8-1.562 2.46-2.549z"
+        />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<!--
+  <section class="services-section" id="services" aria-label="Professional Services">
+    <h2 class="services-title">Services</h2>
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <!--
+      <div class="service-card">
+        <h3>AI/NLP Custom Chatbot</h3>
+        <p>I will design and deploy intelligent chatbots powered by advanced natural language processing tailored to your business goals.</p>
+        <a href="#!" class="card-btn">Checkout Gig</a>
+      </div>
+      <!-- Card 2 -->
+      <!--
+      <div class="service-card">
+        <h3>Automation</h3>
+        <p>I will streamline repetitive tasks with Python-based scripts and cloud technology that increase efficiency and reduce human error across workflows.</p>
+        <a href="#!" class="card-btn">Checkout Gig</a>
+      </div>
+      <!-- Card 3 -->
+      <!--
+      <div class="service-card">
+        <h3>Research Assistance</h3>
+        <p>I will leverage academic expertise and analytical tools for literature reviews, data interpretation, or any of help during the entire research phase.</p>
+        <a href="#contact" class="card-btn", style="background-color: var(--accent);">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <! testimonials-section>
+<section class="testimonials-section" id="testimonials" aria-label="What Clients Say">
+  <h2 class="testimonials-title">Client & Mentor Testimonials</h2>
+  <div class="testimonials-carousel-wrapper">
+    <div class="testimonials-carousel">
+      <!-- Testimonial 1 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"Working with this team was incredible! The AI chatbot they built for us improved our customer service and reduced response time by 50%!"</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <span class="client-name">John Doe</span>
+          <span class="client-role">CEO, Tech Innovations</span>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"Automation solutions have transformed our workflow. The Python scripts and cloud tech reduced our manual processes by over 70%."</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <span class="client-name">Sara Smith</span>
+          <span class="client-role">COO, DataFlow</span>
+        </div>
+      </div>
+      <!-- Testimonial 3 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"I highly recommend the research assistance service. The team's ability to synthesize information and provide actionable insights was invaluable."</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="client-name">Mark Taylor</span>
+          <span class="client-role">Researcher, Academic Insights</span>
+        </div>
+      </div>
+      <!-- Testimonial 4 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"The team’s expertise in AI and automation helped us scale our operations efficiently. They were able to implement solutions that were highly tailored to our needs."</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="client-name">Jessica Williams</span>
+          <span class="client-role">CTO, FutureTech</span>
+        </div>
+      </div>
+      <!-- Testimonial 5 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"Their automation services completely transformed the efficiency of our internal processes. Their team's knowledge of Python scripts was amazing!"</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <span class="client-name">Tom Green</span>
+          <span class="client-role">Director of Operations, QuickFlow</span>
+        </div>
+      </div>
+      <!-- Testimonial 6 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"Thanks to the research assistance, we were able to accelerate our project and uncover key insights that drove success. A highly recommended team!"</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <span class="client-name">Emily Rivas</span>
+          <span class="client-role">Senior Analyst, Insight Group</span>
+        </div>
+      </div>
+      <!-- Testimonial 7 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"I can confidently say the custom AI chatbot created for our business was a game-changer. It helped us resolve issues faster and improve customer satisfaction."</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="client-name">David Lee</span>
+          <span class="client-role">Founder, CustomerCare</span>
+        </div>
+      </div>
+      <!-- Testimonial 8 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"The solutions provided were insightful and highly effective. We saw a measurable improvement in our operations and client engagement. Great service!"</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <span class="client-name">Rachel Adams</span>
+          <span class="client-role">Marketing Head, Global Enterprises</span>
+        </div>
+      </div>
+      <!-- Testimonial 9 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"The work done on automating our workflow was invaluable. We reduced errors and improved efficiency significantly thanks to their tailored Python scripts!"</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="client-name">Jason Harris</span>
+          <span class="client-role">Operations Lead, ProWork Solutions</span>
+        </div>
+      </div>
+      <!-- Testimonial 10 -->
+      <!--
+      <div class="testimonial-card">
+        <img src="https://shorturl.at/gFbpi" alt="Profile Image" class="client-image">
+        <div class="testimonial-content">
+          <p>"Our experience with the team was exceptional. They helped us implement an AI solution that truly improved our customer interaction quality. Thank you!"</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="client-name">Jessica White</span>
+          <span class="client-role">Head of Customer Experience, BigCorp</span>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons for Next and Previous -->
+    <!--
+    <div class="carousel-controls">
+      <button class="prev-btn">&#10094;</button>
+      <button class="next-btn">&#10095;</button>
+    </div>
+  </div>
+</section>
+    -->
+
+</body>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>&copy; 2025 Aviraj Saha. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/aviraj-saha-ai" target="_blank" class="social-link">LinkedIn</a></li>
+        <li><a href="https://github.com/avirsaha" target="_blank" class="social-link">GitHub</a></li>
+        <li><a href="mailto:aviraj.saha@outlook.com" class="social-link">Email</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</html>

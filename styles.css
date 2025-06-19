@@ -1,0 +1,362 @@
+/* Colors from your palette */
+:root {
+  --primary: #0D1B2A;       /* Deep Navy Blue */
+  --secondary: #00BFA6;     /* Electric Teal */
+  --neutral-bg: #F5F7FA;    /* Off-White */
+  --text: #333333;          /* Dark Gray */
+  --accent: #FF6F61;        /* Warm Coral Orange */
+  --trust: #6CA0DC;         /* Soft Sky Blue */
+}
+
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--neutral-bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  user-select: none;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--accent);
+  outline: none;
+}
+
+/* Main content container */
+main {
+  max-width: 960px;
+  margin: 120px auto 40px;
+  display: flex;
+  gap: 48px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Left column: headshot and intro */
+.left-column {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--secondary);
+  box-shadow: 0 0 12px var(--secondary);
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.headshot:hover,
+.headshot:focus {
+  box-shadow: 0 0 20px var(--accent);
+  outline: none;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.intro {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary);
+  margin-top: 0;
+}
+
+/* Right column: about */
+.right-column {
+  flex: 2;
+  min-width: 280px;
+}
+
+.right-column h2 {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.right-column p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* New Section: Skills & Tools */
+.skills-tools-section {
+  max-width: 960px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  color: var(--text);
+}
+
+.skills-column,
+.tools-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.skills-column h3,
+.tools-column h3 {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul li {
+  background-color: var(--secondary);
+  color: var(--neutral-bg);
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 6px 8px 6px 0;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+ul li:hover {
+  background-color: var(--accent);
+  color: var(--neutral-bg);
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 960px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  color: var(--text);
+}
+
+.contact-section h2 {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+form {
+  max-width: 480px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 14px;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  color: var(--text);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  color: var(--neutral-bg);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--secondary);
+  outline: none;
+}
+
+/* Socials */
+.socials {
+  text-align: center;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.social-link {
+  color: var(--secondary);
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent);
+  outline: none;
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer-right .social-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-right .social-links li {
+  display: inline-block;
+}
+
+.footer-right .social-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-right .social-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left p {
+    margin-bottom: 1rem;
+  }
+  .footer-right {
+    margin-top: 1rem;
+  }
+
+  main,
+  .skills-tools-section {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .left-column,
+  .right-column,
+  .skills-column,
+  .tools-column {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-column {
+    margin-top: 32px;
+  }
+
+  .tools-column {
+    margin-top: 32px;
+  }
+}
+
