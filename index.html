@@ -57,7 +57,34 @@ Color Palette:
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aviraj Saha</title>
   <link rel="stylesheet" href="styles.css">
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.blog-carousel');
+
+    if (!carousel) {
+      console.warn("Carousel not found");
+      return;
+    }
+
+    const scrollStep = 300;
+    const scrollInterval = 4000;
+
+    setInterval(() => {
+      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+      if (carousel.scrollLeft >= maxScrollLeft - 5) {
+        // Go back to start
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        // Scroll to next card
+        carousel.scrollBy({ left: scrollStep, behavior: 'smooth' });
+      }
+    }, scrollInterval);
+  });
+</script>
+
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -752,6 +779,113 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTabs(0);
   })();
 </script>
+<style>
+/* Blog Section */
+.blog-section {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: var(--text);
+}
+
+.blog-section h2 {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Carousel container */
+.blog-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 12px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.blog-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Blog card */
+.blog-card {
+  flex: 0 0 280px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(13, 27, 42, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--secondary);
+}
+
+.blog-card:hover {
+  transform: translateY(10px);
+  box-shadow: 0 12px 24px rgba(255, 111, 97, 0.2);
+  border-top: 4px solid var(--accent);
+}
+
+.blog-card a {
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+}
+
+.blog-card h3 {
+  color: var(--primary);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: var(--text);
+}
+
+</style>
+<!-- Blog Section -->
+<!--
+<section class="blog-section" id="blog">
+  <h2>Blog Posts & Publications</h2>
+  <div class="blog-carousel">
+    <div class="blog-card">
+      <a href="https://yourblog.com/post-1" target="_blank">
+        <h3>Exploring MLOps in Practice</h3>
+        <p>Streamlining machine learning workflows with DevOps principles.</p>
+      </a>
+    </div>
+    <div class="blog-card">
+      <a href="https://yourblog.com/post-2" target="_blank">
+        <h3>Rapid Prototyping with Python</h3>
+        <p>How to go from idea to demo in hours, not days.</p>
+      </a>
+    </div>
+    <div class="blog-card">
+      <a href="https://yourblog.com/post-3" target="_blank">
+        <h3>Cloud Infra for ML Projects</h3>
+        <p>Scalable deployment tips for modern AI systems.</p>
+      </a>
+    </div>
+    <div class="blog-card">
+      <a href="https://yourblog.com/post-3" target="_blank">
+        <h3>Cloud Infra for ML Projects</h3>
+        <p>Scalable deployment tips for modern AI systems.</p>
+      </a>
+    </div>
+    <div class="blog-card">
+      <a href="https://yourblog.com/post-3" target="_blank">
+        <h3>Cloud Infra for ML Projects</h3>
+        <p>Scalable deployment tips for modern AI systems.</p>
+      </a>
+    </div>
+    <!-- Add more blog cards as needed -->
+    <!--
+  </div>
+</section>
+
+
 <!-- Contact Section -->
 <section class="contact-section" id="contact">
   <h2>Contact Me</h2>
