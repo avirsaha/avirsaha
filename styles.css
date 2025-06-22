@@ -359,4 +359,60 @@ button:focus {
     margin-top: 32px;
   }
 }
+.language-section {
+  max-width: 960px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  color: var(--text);
+}
+
+.language-section h3 {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.language-bubbles {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.language-bubbles li {
+  background-color: var(--primary);
+<section class="language-section" id="languages">
+  <h3>Language Fluency</h3>
+  <ul class="language-bubbles">
+    <li>English Professional Fluency</li>
+    <li>Hindi  Bilingual Fluency</li>
+    <li>Bengali Native Fluency</li>
+    <li>Russian Limited Fluency</li>
+  </ul>
+</section>
+  color: var(--neutral-bg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.language-bubbles li:hover {
+  background-color: var(--accent);
+  color: var(--neutral-bg);
+}
+
+.flag {
+  font-size: 18px;
+  line-height: 1;
+}
 
