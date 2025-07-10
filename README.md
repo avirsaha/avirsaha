@@ -39,10 +39,10 @@ Currently working with **Rust**, **Go**, and **Python** to build fast, productio
 - Infra-focused ML internships
 
   ---
-  ### Stats
+ <!-- ### Stats
 
 ![Aviraj's GitHub stats](https://github-readme-stats.vercel.app/api?username=avirsaha&show_icons=true&count_private=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=avirsaha&layout=compact&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=avirsaha&layout=compact&theme=radical) -->
 
 [GitHub](https://github.com/avirsaha) · [LinkedIn](https://linkedin.com/in/avirsaha)  
 > Always learning. Always building.
