@@ -335,4 +335,53 @@ body {
   }
 }
 
+.skill-box {
+  background-color: #000;
+  border: 1px solid #000;
+  transition: border-color 0.3s ease;
+}
+/*
+.skill-box:hover {
+  border-color: #a259ff;
+  box-shadow: 0 0 12px rgba(162, 89, 255, 0.15);
+}
+*/
+h2.skills-title {
+  padding-top: 30px; /* or any value you like */
+}
+
+.skill-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #888888;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  background: #2a2a2a;
+  color: #a259ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.skill-chip:hover {
+  background: #a259ff;
+  color: #1a1a1a;
+  border-color: #a259ff;
+}
+
+
+
 
