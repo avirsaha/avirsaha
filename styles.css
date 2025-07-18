@@ -1,6 +1,7 @@
 /* Base styles */
-html {
+html, body {
   scroll-behavior: auto;
+  overflow-x: hidden;
 }
 
 section {
