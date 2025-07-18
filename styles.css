@@ -1,7 +1,19 @@
 /* Base styles */
 html, body {
   scroll-behavior: auto;
+  max-width: 100%;
+  Position: relative;
   overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 section {
@@ -72,7 +84,7 @@ body {
 
  .hero-title {
     white-space: normal; /* allow wrapping on small screens */
-    font-size: 1.8rem; /* optional smaller size */
+    font-size: 1.3rem; /* optional smaller size */
   }
 }
 /* Custom Links */
