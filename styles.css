@@ -296,3 +296,22 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  #about {
+    font-size: 0.9rem;
+  }
+
+  #about h2 {
+    font-size: 1.25rem;
+  }
+
+  #about .lead {
+    font-size: 0.95rem;
+  }
+
+  #about span {
+    font-size: 0.9rem;
+  }
+}
+
+
