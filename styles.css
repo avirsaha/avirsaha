@@ -1,23 +1,10 @@
-/* Base styles */
+/* ============================================
+   Base Styles
+============================================ */
+
 html, body {
-  scroll-behavior: auto;
-  max-width: 100%;
-  Position: relative;
   overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-section {
-  scroll-snap-align: start;
+  scroll-behavior: auto;
 }
 
 body {
@@ -26,7 +13,14 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Typography */
+section {
+  scroll-snap-align: start;
+}
+
+/* ============================================
+   Typography
+============================================ */
+
 .hero-title {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
@@ -40,7 +34,10 @@ body {
   color: #9ca3af;
 }
 
-/* Navigation Links */
+/* ============================================
+   Navigation & Footer Links
+============================================ */
+
 .nav-link,
 .footer-links a {
   color: #ffffff;
@@ -59,7 +56,44 @@ body {
   color: #ffff !important;
 }
 
+/* Bootstrap Outline Primary Button Overrides */
+
+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus:active {
+  background-color: transparent !important;
+  color: #3333cc !important; /* Bootstrap primary text color */
+  box-shadow: none !important;
+  border-color: #3333cc !important;
+}
+
 @media (max-width: 576px) {
+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus:active {
+  background-color: transparent !important;
+  color: #ff3300 !important; /* Bootstrap primary text color */
+  box-shadow: none !important;
+  border-color: #ff3300 !important;
+}
+}
+
+/* ============================================
+   Responsive Styles (Mobile First)
+============================================ */
+
+@media (max-width: 576px) {
+  .container,
+  .hero-section,
+  .card-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .navbar {
     padding-top: 0.5rem;
     padding-bottom: 0.25rem;
@@ -81,13 +115,16 @@ body {
     padding: 0.25rem 0;
   }
 
-
- .hero-title {
+  .hero-title {
     white-space: normal; /* allow wrapping on small screens */
     font-size: 1.3rem; /* optional smaller size */
   }
 }
-/* Custom Links */
+
+/* ============================================
+   Custom Links
+============================================ */
+
 .custom-link {
   color: #3333cc;
 }
@@ -96,22 +133,30 @@ body {
   color: #8000ff;
 }
 
-/* Buttons */
+/* ============================================
+   Buttons
+============================================ */
+
 .btn-primary {
+  background-color: #ff0066;
+  border: none;
+}
+.btn-primary:hover {
   background-color: #5200cc;
   border: none;
 }
-.btn-outline-primary:focus,
-.btn-outline-primary:hover,
-.btn-outline-primary:active,
-.btn-outline-primary:focus:active {
-  background-color: transparent !important;
-  color: #0d6efd !important; /* Bootstrap primary text color */
-  box-shadow: none !important;
-  border-color: #0d6efd !important;
+@media (max-width: 768px) {
+  .btn-primary{
+    background-color: #5200cc;
+  }
+  .btn-primary:hover{
+    background-color: blue;
+  }
 }
+/* ============================================
+   Layout Sections
+============================================ */
 
-/* Layout Sections */
 #matlab-graph-container {
   width: 100%;
   height: 500px;
@@ -131,31 +176,30 @@ body {
   margin-top: 3rem;
 }
 
-/* Special Sections */
+/* ============================================
+   About Section Styling & Effects
+============================================ */
+
 #about {
   border-radius: 0.1rem;
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 10px;
   font-style: normal;
-}
-
+  position: relative; /* needed for ::before and ::after positioning */
 }
 
 #about.bg-dark {
-  background-color: #000 !important; /* match body background or your preferred darker color */
+  background-color: #000 !important;
 }
-#about::before,
-#about::after {
+
+/* Abstract Layer 1: Polygonal Shape */
+#about::before {
   content: '';
   position: absolute;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.04; /* Subtle enough */
-}
-
-/* Abstract Layer 1: Polygonal shape */
-#about::before {
+  opacity: 0.04;
   width: 300px;
   height: 300px;
   top: 10%;
@@ -165,8 +209,13 @@ body {
   filter: blur(40px);
 }
 
-/* Abstract Layer 2: Circle with gradient */
+/* Abstract Layer 2: Circle with Gradient */
 #about::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.04;
   width: 250px;
   height: 250px;
   bottom: 5%;
@@ -176,46 +225,48 @@ body {
   filter: blur(60px);
 }
 
-/* Cursor */
-.cursor {
+/* ============================================
+   Cursor Styling & Animation
+============================================ */
+
+.cursor,
+.cursor-about1,
+.cursor-about2,
+.cursor-about3,
+.cursor-about4 {
   display: inline-block;
-  color: #5200cc;
   font-weight: bold;
   animation: blink 0.7s step-start infinite;
+}
+
+.cursor {
+  color: #5200cc;
 }
 
 .cursor-about1,
 .cursor-about2,
 .cursor-about3,
 .cursor-about4 {
-  display: inline-block;
   color: #fff;
-  font-weight: bold;
-  animation: blink 0.7s step-start infinite;
 }
 
-
-.cursor-static{
+.cursor-static {
   display: inline-block;
-  color: #ff471a;
+  color: #ff0066;;
   font-weight: bold;
 }
-
-/* Mouse Glow */
-/*
-.mouse-glow {
-  position: fixed;
-  pointer-events: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,0,255,0.5) 0%, rgba(255,0,255,0) 70%);
-  mix-blend-mode: screen;
-  animation: fadeOut 0.5s forwards;
-  transform: translate(-50%, -50%);
+@media (max-width: 768px) {
+.cursor-static {
+  color: #ff3300;
 }
+.cursor{
+  color: #ff3300;
+}
+}
+/* ============================================
+   Animations
+============================================ */
 
-/* Animations */
 @keyframes blink {
   50% {
     opacity: 0;
@@ -229,17 +280,10 @@ body {
   }
 }
 
-/* Responsive */
-@media (max-width: 576px) {
-  .container,
-  .hero-section,
-  .card-section {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
+/* ============================================
+   Contact Section Styling
+============================================ */
 
-/* Contact Section Styling */
 .contact-section {
   background-color: #0f0f11;
   color: white;
@@ -249,7 +293,7 @@ body {
   justify-content: center;
 }
 
-/* Button Style (Override Bootstrap if needed) */
+/* Contact Button Override */
 .contact-section .btn-primary {
   background-color: #297eff;
   border: none;
@@ -263,24 +307,17 @@ body {
 
 /* 3D Graphic Image */
 .contact-graphic {
-  width: 300px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   margin-top: 2rem;
   filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
 }
 
-.contact-graphic {
-  max-width: 100%;
-  height: auto;
-}
+/* ============================================
+   Particle Canvas Overlay & Flash Effect
+============================================ */
 
-.contact-graphic {
-  width: 100%;
-  max-width: 500px;
-}
-
-
-/* Particle canvas overlay */
 #particle-overlay {
   position: fixed;
   top: 0;
@@ -290,8 +327,6 @@ body {
   pointer-events: none;
   z-index: 9999;
 }
-
-/* Optional background flash burst */
 
 .flash {
   position: fixed;
@@ -317,6 +352,10 @@ body {
   }
 }
 
+/* ============================================
+   Responsive Font Sizes for #about Section
+============================================ */
+
 @media (max-width: 768px) {
   #about {
     font-size: 0.9rem;
@@ -335,17 +374,24 @@ body {
   }
 }
 
+/* ============================================
+   Skills Box Styling & Skill Chips
+============================================ */
+
 .skill-box {
   background-color: #000;
   border: 1px solid #000;
   transition: border-color 0.3s ease;
 }
+
+/* Uncomment to enable hover effect */
 /*
 .skill-box:hover {
   border-color: #a259ff;
   box-shadow: 0 0 12px rgba(162, 89, 255, 0.15);
 }
 */
+
 h2.skills-title {
   padding-top: 30px; /* or any value you like */
 }
@@ -354,7 +400,7 @@ h2.skills-title {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.03em;
-  color: #888888;
+  color: #3333cc;
 }
 
 .skill-chips {
@@ -381,7 +427,3 @@ h2.skills-title {
   color: #1a1a1a;
   border-color: #a259ff;
 }
-
-
-
-
